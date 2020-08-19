@@ -1,13 +1,22 @@
+
+/*==================== 
+  Main CSS and Navbar
+======================*/
 body {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #f2f2f2;
 }
 
 #Navbar {
   background-color: #222 !important;
 }
+.nav-link {color: #ff8d1e !important;}
+.nav-link:hover {	color: #f3b69a !important;}
 
-/* TEXT */
+
+/*==================== 
+  Text
+======================*/
 h1 {
   text-align: center;
   padding: 2%;
@@ -22,27 +31,33 @@ h2 {
 
 p {
   padding: 5%;
+  margin: 0px;
+}
+.copyright-text {
+  padding: 2%;
 }
 
-/* CONTAINERS and BOXES */
+/*==================== 
+  Container and Boxes
+======================*/
+.section1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section1-col2 {background-color: #fff;}
+.section2-col2 {background-color: #fff;}
 
-#headerContainer {
-  padding: 0px !important;
-  margin: 0px !important;
-  background-color: black;
-}
-.imgContainer {
-  object-fit: cover;
-  height: 80px;
-  width: auto;
-}
+
 
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-
 .box {
   border: 0;
   border-radius: 5px;
@@ -52,3 +67,81 @@ p {
 .box-content {
   align-items: center;
 }
+
+
+
+/*==================== 
+  Footer
+======================*/
+footer .main-footer {
+  margin: 0px;	
+  padding: 20px;
+  background: #252525;
+}
+/* List style without dots */
+footer ul {
+  padding-left: 0;	
+  list-style: none;
+}
+/* Copy Right Footer */
+.footer-copyright {
+  margin: 0px;	
+  padding: 5px;
+  color: #ff8d1e;
+  background-color: #252525;
+}
+
+/*==================== 
+	Footer widgets 
+======================*/
+.widget li a{	color: #ff8d1e;}
+.widget li a:hover{	color: #f7a884;}
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{	float: right;	background: #7f7f7f;}
+
+/* Footer headers */
+.typo-light h1,h2,h3,h4,h5,h6
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{	color: #fff;}
+
+/* Social media */
+ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
+ul.social-footer2 li {display: inline-block;padding: 0px;}
+ul.social-footer2 li a {display: block;	height:auto;width: auto; text-align: center;}
+
+
+
+/*==================== 
+	Mobile View 
+======================*/
+@media (min-width: 360px) and (max-width: 600px) {
+  .section1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*====================== 
+	Mobile View Landscape
+========================*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/*==================== 
+	Tablet View 
+======================*/
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+}
+
+/*==================== 
+	Tablet View landscape
+======================*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+}
+
